@@ -1,3 +1,5 @@
+<img title="Title" src="img/sqlab-icon-macos.svg" alt="alt text" width="224" data-align="center" />
+
 # SQLab
 
 **Datenbanken verstehen. Daten entdecken.**
@@ -10,10 +12,10 @@ Dieses Repository stellt die Installationsdateien und automatischen Updates bere
 
 ## Zwei Ausgaben
 
-| Ausgabe | Für wen? | Funktionen |
-|---|---|---|
-| **SQLab** | Schülerinnen und Schüler | Daten erkunden, SQL schreiben, Lernpakete bearbeiten und Aufgaben lösen. |
-| **SQLab Lehrer** | Lehrkräfte | Zusätzlich eigene Datenbanken und Lernpakete erstellen, Aufgaben und Material bearbeiten sowie Musterlösungen vor der Weitergabe prüfen. |
+| Ausgabe          | Für wen?                 | Funktionen                                                                                                                               |
+| ---------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **SQLab**        | Schülerinnen und Schüler | Daten erkunden, SQL schreiben, Lernpakete bearbeiten und Aufgaben lösen.                                                                 |
+| **SQLab Lehrer** | Lehrkräfte               | Zusätzlich eigene Datenbanken und Lernpakete erstellen, Aufgaben und Material bearbeiten sowie Musterlösungen vor der Weitergabe prüfen. |
 
 ## Was bietet SQLab?
 
@@ -46,4 +48,3 @@ Für eine manuelle Mac-Installation die **DMG** verwenden. Die zusätzlichen Dat
 ## Windows
 
 Eine Windows-Ausgabe ist geplant. Aktuell werden ausschließlich Mac-Pakete bereitgestellt; die verfügbaren Plattformen und Änderungen sind jeweils im Release beschrieben.
-
