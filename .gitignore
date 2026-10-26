@@ -1,0 +1,19 @@
+# Local link to the private project's build output; upload files as Release assets.
+/releases
+
+# Installers and updater artifacts never belong in the repository history.
+*.dmg
+*.app/
+*.app.tar.gz
+*.sig
+*.exe
+/sqlab-latest.json
+/sqlab-lehrer-latest.json
+/SHA256SUMS.txt
+/RELEASE-NOTES.md
+
+# Local metadata and signing secrets.
+.DS_Store
+.local/
+*.key
+*.p12
