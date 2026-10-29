@@ -33,14 +33,24 @@ Mitgeliefert werden die Lernpakete **Bibliothek**, **Schule**, **Tierheim** und 
 
 1. Unter **[Releases](https://github.com/cartz/SQLab-releases/releases)** die DMG der gewünschten Ausgabe herunterladen.
 2. Die DMG öffnen und die App in den Ordner **Programme** ziehen.
-3. Vor dem ersten Start den unten beschriebenen Schritt im Terminal ausführen.
-4. SQLab bzw. SQLab Lehrer aus dem Programme-Ordner starten.
+3. SQLab bzw. SQLab Lehrer aus dem Programme-Ordner starten. Beim allerersten Start den unten beschriebenen Schritt einmal bestätigen.
 
 Die aktuellen Mac-Pakete sind für **Apple Silicon** vorgesehen; erkennbar an `aarch64` im Dateinamen. Falls weitere Architekturen angeboten werden, stehen die entsprechenden Dateien im jeweiligen Release. Beide Ausgaben lassen sich nebeneinander installieren.
 
-### Vor dem ersten Start
+### Beim ersten Start
 
-Die aktuellen Mac-Ausgaben sind noch nicht von Apple notarisiert. Nach dem Kopieren in **Programme** muss deshalb vor dem ersten Start das Quarantäne-Attribut der jeweiligen App entfernt werden. Dazu **Terminal** öffnen und den passenden Befehl ausführen. Diesen Schritt nur für die hier verlinkten, vertrauenswürdigen Downloads durchführen.
+SQLab ist noch nicht von Apple notarisiert. macOS meldet deshalb beim ersten Start, dass es die App nicht überprüfen konnte, und öffnet sie nicht. Ab Version **0.5.10** lässt sich das einmalig in den Systemeinstellungen freigeben:
+
+1. In der Meldung auf **Fertig** klicken (nicht „In den Papierkorb legen“).
+2. **Systemeinstellungen → Datenschutz & Sicherheit** öffnen und nach unten zum Abschnitt **Sicherheit** scrollen.
+3. Neben dem Hinweis zu SQLab auf **Dennoch öffnen** klicken und mit Passwort oder Touch ID bestätigen.
+4. In der folgenden Meldung **Öffnen** wählen.
+
+Danach startet die App normal. Updates über „Nach Updates suchen…“ brauchen diesen Schritt nicht erneut. Diesen Schritt nur für die hier verlinkten, vertrauenswürdigen Downloads durchführen.
+
+### Alternative im Terminal
+
+Für Version **0.5.9 und älter** sowie für die Schul-IT auf verwalteten Geräten: Nach dem Kopieren in **Programme** das Quarantäne-Attribut im **Terminal** entfernen.
 
 **SQLab:**
 
@@ -54,7 +64,7 @@ xattr -d com.apple.quarantine "/Applications/SQLab.app"
 xattr -d com.apple.quarantine "/Applications/SQLab Lehrer.app"
 ```
 
-Wer beide Ausgaben installiert, führt beide Befehle aus. Die Anführungszeichen gehören zum Befehl und sind insbesondere beim App-Namen mit Leerzeichen notwendig. Anschließend lässt sich die App aus **Programme** öffnen. Meldet Terminal, dass das Attribut nicht vorhanden ist, kann die App bereits direkt gestartet werden.
+Die Anführungszeichen gehören zum Befehl und sind insbesondere beim App-Namen mit Leerzeichen notwendig. Meldet Terminal, dass das Attribut nicht vorhanden ist, kann die App bereits direkt gestartet werden. Über eine MDM-Lösung verteilte Apps sind in der Regel nicht betroffen.
 
 ## Updates
 
