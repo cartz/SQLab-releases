@@ -74,6 +74,14 @@ Vor einer Installation wird der Arbeitsstand gespeichert. Offene SQL-Änderungen
 
 Für eine manuelle Mac-Installation die **DMG** verwenden. Die zusätzlichen Dateien `.app.tar.gz`, `.sig` und `*-latest.json` sind für den eingebauten Updater bestimmt. `SHA256SUMS.txt` enthält die Prüfsummen der Release-Dateien.
 
-## Windows
+## Windows (Vorschau)
 
-Eine Windows-Ausgabe ist geplant. Aktuell werden ausschließlich Mac-Pakete bereitgestellt; die verfügbaren Plattformen und Änderungen sind jeweils im Release beschrieben.
+Seit Version **0.5.11** gibt es SQLab auch für Windows 10 und 11 (x64), bisher nur die Ausgabe für Lernende. Zur Wahl stehen drei Dateien im jeweiligen Release:
+
+| Datei | Wofür |
+|---|---|
+| `SQLab_<version>_x64-setup.exe` | Installation für den eigenen Benutzer, ohne Administratorrechte |
+| `SQLab_<version>_x64_de-DE.msi` | Installation für alle Benutzer, geeignet für die Verteilung durch die Schul-IT |
+| `SQLab_<version>_x64-portable.exe` | ohne Installation starten, etwa von einem Stick; Einstellungen und Lernstände liegen trotzdem im Benutzerprofil |
+
+Die Windows-Dateien sind nicht signiert. Windows SmartScreen warnt deshalb beim ersten Start: **Weitere Informationen → Trotzdem ausführen**. SQLab braucht die WebView2-Laufzeit, die auf Windows 10 und 11 normalerweise vorhanden ist. Automatische Updates gibt es unter Windows noch nicht; neue Versionen bitte von hier neu installieren.
